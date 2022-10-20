@@ -25,6 +25,7 @@ while True:
                         print("closed")
                 else:
                         print("open")
+                        pygame.mixer.music.load("halotheme_clip.wav")
                         pygame.mixer.music.play()
 
         time.sleep(0.05)
