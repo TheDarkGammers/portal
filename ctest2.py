@@ -4,8 +4,7 @@ import board
 import digitalio
 import pygame
 pygame.mixer.init()
-pygame.mixer.music.load("thunder.wav")
-pygame.mixer.music.play()
+pygame.mixer.music.load("halotheme_clip.wav")
 
 
 s1 = digitalio.DigitalInOut(board.D17)
@@ -26,4 +25,6 @@ while True:
                         print("closed")
                 else:
                         print("open")
+                        pygame.mixer.music.play()
+
         time.sleep(0.05)
