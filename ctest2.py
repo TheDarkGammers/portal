@@ -5,7 +5,7 @@ import digitalio
 import pygame
 pygame.mixer.init()
 pygame.mixer.music.load("halotheme_clip.wav")
-
+pygame.mixer.music.play()
 
 s1 = digitalio.DigitalInOut(board.D17)
 s1.direction = digitalio.Direction.INPUT
@@ -25,7 +25,6 @@ while True:
                         print("closed")
                 else:
                         print("open")
-                        pygame.mixer.music.load("halotheme_clip.wav")
-                        pygame.mixer.music.play()
+                       
 
         time.sleep(0.05)
