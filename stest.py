@@ -2,7 +2,8 @@ import time
 import os
 import board
 import digitalio
-import pygame
-pygame.mixer.init()
-pygame.mixer.music.load("halotheme_clip.wav")
-pygame.mixer.music.play()
+
+
+os.system('amixer cset numid=1 90%')
+os.system("cvlc --play-and-exit helotheme_clip.wav")
+
