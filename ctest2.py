@@ -2,10 +2,9 @@ import time
 import os
 import board
 import digitalio
-import pygame
-pygame.mixer.init()
-pygame.mixer.music.load("halotheme_clip.wav")
-pygame.mixer.music.play()
+
+os.system('amixer cset numid=1 90%')
+os.system("cvlc --play-and-exit bbc_comedy-sou_07005034.mp3")
 
 s1 = digitalio.DigitalInOut(board.D17)
 s1.direction = digitalio.Direction.INPUT
