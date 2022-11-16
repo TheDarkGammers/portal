@@ -25,6 +25,6 @@ while True:
                         print("closed")
                 else:
                         print("open")
-                       
+                        os.system("cvlc --play-and-exit bbc_comedy-sou_07005034.mp3")
 
         time.sleep(0.05)
