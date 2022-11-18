@@ -4,7 +4,7 @@ import board
 import digitalio
 
 os.system('amixer cset numid=1 100%')
-os.system("cvlc --play-and-exit bbc_comedy-sou_07005034.mp3")
+os.system("cvlc --play-and-exit portal_start.mp3")
 
 
 s1 = digitalio.DigitalInOut(board.D17)
