@@ -1,11 +1,15 @@
 import time
 import os
+import subprocess
+subprocess.Popen('ls -la', shell=True)
 import board
 import digitalio
 
-os.system('amixer cset numid=1 100%')
-os.system("cvlc --play-and-exit portal_start.mp3")
 
+# os.system('amixer cset numid=1 100%')
+# os.system("cvlc --play-and-exit portal_start.mp3")
+subprocess.Popen('amixer cset numid=1 100%', shell=True)
+subprocess.Popen("cvlc --play-and-exit portal_start.mp3", shell=True)
 
 s1 = digitalio.DigitalInOut(board.D17)
 s1.direction = digitalio.Direction.INPUT
