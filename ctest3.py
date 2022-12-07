@@ -15,7 +15,7 @@ os.system("cvlc --play-and-exit /home/pi/portal/portal_start.mp3")
 
 
 filelist = os.listdir("/home/pi/portal/Sounds")
-print("filelist")
+print(filelist)
 
 
 s1 = digitalio.DigitalInOut(board.D17)
