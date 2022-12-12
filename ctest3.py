@@ -39,7 +39,8 @@ while True:
                         print("open")
                         os.system(f"sudo python3 /home/pi/door/led_open.py &")
                         soundFile = f"/home/pi/portal/Sounds/{random.choices(filelist, weights = (30,10), k = 1)[0]}"
-                        print ("sound",soundFile)
-                        os.system("cvlc --play-and-exit {soundFile}")
+                        cmd = "cvlc --play-and-exit {soundFile}"
+                        print ("sound",cmd)
+                        os.system(cmd)
                 
         time.sleep(0.05)
