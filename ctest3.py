@@ -4,6 +4,7 @@ import subprocess
 import board
 import digitalio
 import random
+import glob
 
 
 os.system(f"sudo python3 /home/pi/door/led_startup.py &")
@@ -14,7 +15,8 @@ os.system("cvlc --play-and-exit /home/pi/portal/portal_start.mp3")
 # subprocess.Popen("cvlc --play-and-exit /home/pi/portal/portal_start.mp3", shell=True)
 
 
-filelist = os.listdir("/home/pi/portal/Sounds/*.mp3")
+# filelist = os.listdir("/home/pi/portal/Sounds/*.mp3")
+filelist = glob.glob ("/home/pi/portal/Sounds/*.mp3")
 print(filelist)
 
 
