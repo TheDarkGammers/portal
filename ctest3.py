@@ -23,7 +23,7 @@ s1.direction = digitalio.Direction.INPUT
 s1.pull = digitalio.Pull.DOWN
 
 isopen = s1.value
-
+print (isopen)
 
 while True:
         #if (s1.value) == True:
