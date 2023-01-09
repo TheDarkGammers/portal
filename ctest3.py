@@ -14,7 +14,7 @@ os.system("cvlc --play-and-exit /home/pi/portal/portal_start.mp3")
 # subprocess.Popen("cvlc --play-and-exit /home/pi/portal/portal_start.mp3", shell=True)
 
 
-filelist = os.listdir("/home/pi/portal/Sounds")
+filelist = os.listdir("/home/pi/portal/Sounds/*.mp3")
 print(filelist)
 
 
