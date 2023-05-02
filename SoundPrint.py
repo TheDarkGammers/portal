@@ -1,4 +1,4 @@
 import os
 
-filelist = os.listdir("/home/pi/portal/Sounds/*.mp3")
+filelist = os.listdir("/home/pi/portal/Sounds/")
 print(filelist)
